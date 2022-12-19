@@ -3,7 +3,7 @@
 - 原始数据来源于[纽约出租车数据](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).因为涉及到数据预处理问题,最终选择的是kaggle网站上的[数据集](https://www.kaggle.com/code/chengshiangli/generate-map-tiles-from-nyc-taxi-trip-data/notebook)
 
 ## 2.数据预处理
-#### 本部分对应的文件为*./data/handlerNYC.py*.数据预处理分为以下几个步骤(仅供参考)：
+#### 本部分对应的文件为\**./data/handlerNYC.py\**.数据预处理分为以下几个步骤(仅供参考)：
 
 - 2.1 首先,为了便于处理,将下载得到的csv文件的数据导入到MySQL中(也删除了一些不必要的字段),最终保留了：pickup_datetime,pickup_longitude,pickup_latitude,dropoff_longitude,dropoff_latitude等五个重要的字段.同时,只选择了2015.1.1~2015.3.1共60天的数据(约为100万条,按乘客上下车的坐标点来计算,就相当于有200万个点),为了加快数据处理的速度,将这100万的数据又单独保存到了另一张表中,也就是train_clean表.
 
