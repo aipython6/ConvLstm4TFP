@@ -44,8 +44,7 @@ class handlerNyc():
     # total 200 regions
     def gon_instances(self) -> list:
         # (74.07173549999993-73.75255799999995)*111/20 = 1.771435125km;(40.797089400000004-40.568973)*111/10 = 2.53209204km
-        min_longitude, max_longitude, min_latitude, max_latitude = math.fabs(
-            -73.75255799999995), math.fabs(-74.07173549999993), 40.568973, 40.797089400000004
+        min_longitude, max_longitude, min_latitude, max_latitude = math.fabs(-73.75255799999995), math.fabs(-74.07173549999993), 40.568973, 40.797089400000004
         gon_instances = list()
         # for longitude, grid = 0.01595887499999904
         avg_longitude_20 = (max_longitude - min_longitude) / 20
