@@ -20,3 +20,11 @@
 - 主文件是main.py,各个模型在./model下,具体参考这些文件中的相关代码即可.
 
 - 论文: **doi:10.1109/wcsp.2017.8171119**,[site](https://sci-hub.wf/10.1109/wcsp.2017.8171119#)
+
+- 使用方法(安装必备的pytorch/numpy/sklearn/pymysql/shapely等)，超参数的配置在configuration.py
+
+```shell
+git clone https://github.com/aipython6/ConvLstm4TFP.git
+cd ConvLstm4TFP
+python main.py
+```
